@@ -1,0 +1,33 @@
+{
+  "name": "nl-co",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
+    "react": "^16.3.0",
+    "react-day-picker": "^7.0.6",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.1",
+    "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
