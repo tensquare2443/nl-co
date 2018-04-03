@@ -11,7 +11,14 @@ class Maps extends React.Component {
       mapsKey = process.env.MAPS_KEY;
     } else {
       alert("no");
-      mapsKey = require('./../../clientvars').mapsKey;
+      // mapsKey = require('./../../clientvars').mapsKey;
+
+      try {
+        mapsKey = require('./../../clientvars').mapsKey;
+      } catch(e) {
+        mapsKey = 'invalid';
+      }
+
     }
 
     // if (require('./../../clientvars')) {
