@@ -4,8 +4,8 @@ var MongoClient = require('mongodb').MongoClient;
 mongoose.Promise = global.Promise;
 
 var databaseUri;
-if (process.env.MONGODB_URI) {
-  databaseUri = process.env.MONGODB_URI;
+if (process.env.PROD_MONGODB) {
+  databaseUri = process.env.PROD_MONGODB;
 } else {
   databaseUri = 'mongodb://localhost:27017/NLCO';
 }
