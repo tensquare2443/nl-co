@@ -134,6 +134,7 @@ app.post('/attend/remove', authenticate, (req, res) => {
 });
 
 app.get('/search', (req, res) => {
+  console.log('apiKey: ' + apiKey);
   var url = 'https://api.yelp.com/v3/businesses/search';
   var location = req.query.location;
   var term = "bars";
