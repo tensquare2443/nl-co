@@ -3,7 +3,17 @@ import React from 'react';
 
 class Maps extends React.Component {
   render() {
-    var mapsKey = process.env.MAPS_KEY || require('./../../clientvars').mapsKey;
+
+    var mapsKey;
+    if (require('./../../clientvars').mapsKey) {
+      alert("yes");
+      mapsKey = require('./../../clientvars').mapsKey;
+    } else {
+      alert("no");
+      mapsKey = process.env.MAPS_KEY;
+    }
+    alert(mapsKey);
+
     var mapsUrl = `https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=Space+Needle,Seattle+WA`;
     return(
       <div className="custom-modal" tabIndex="-1" role="dialog">
