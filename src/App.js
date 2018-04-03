@@ -1,20 +1,3 @@
-//DONE fix weird login issue
-//DONE rsvp functionality. include "going" div in results card. include "i'm going" button in results.
-//DONE create account modal open on rsvp click when not logged in
-//DONE change card color on hover.
-//DONE rsvp modal cetnering/state removing
-//DONE authentication setup
-//DONE close create account modal on success
-//DONE hashing & salting
-//DONE submit login/createacc forms on keypress
-//DONE google maps/other map plugin on 'view map' click.
-//DONE yelp link in new tab on 'more info' click
-//DONE multiple pages of bars
-//DONE prevent duplicate 'attending' array pushes in the 'user' collection.
-//DONE profile setup.
-//DONE attenders in near future on search results
-//DONE "undo rsvp" capabililty. (on profile page)
-//DONE authentication on actions
 //must do browser/other local storage.
 
 import React, {Component} from 'react';
