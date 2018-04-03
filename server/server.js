@@ -6,7 +6,20 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const request = require("request");
 const rp = require("request-promise");
-const {apiKey} = require("./vars");
+
+// const {apiKey} = require("./vars");
+var apiKey;
+if (process.env.API_KEY) {
+  apiKey = process.env.API_KEY;
+} else {
+  try {
+    apiKey = require('./vars').apiKey;
+  } catch(e) {
+    apiKey = 'invalid';
+  }
+}
+
+
 const _ = require("lodash");
 const moment = require("moment");
 
